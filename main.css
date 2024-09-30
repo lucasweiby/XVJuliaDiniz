@@ -15,6 +15,10 @@ body {
   height: 100vh;
 }
 
+.gifts-body {
+  align-items: start;
+}
+
 h1,
 h2,
 h3,
@@ -91,13 +95,36 @@ h6 {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   text-align: center;
 }
 .gifts-left-info b {
   font-weight: 600;
   color: #bc1823;
+}
+.gifts-left-pix {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.gifts-left-pix b {
+  font-family: "DM Serif Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.gifts-left-pix img {
+  height: 290px;
+  width: auto;
+}
+.gifts-left-pix div {
+  display: flex;
+  flex-direction: column;
 }
 .gifts-right {
   width: 70%;
