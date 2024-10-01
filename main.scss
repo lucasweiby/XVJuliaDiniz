@@ -182,6 +182,21 @@ h6 {
     overflow-y: auto;
     padding: 0 32px;
 
+    .gallery {
+      columns: 4;
+      column-gap: 8px;
+
+      @include mobile {
+        columns: 2;
+        padding: 0 16px;
+        margin-top: 64px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
     @include mobile {
       width: 100%;
       height: auto;
