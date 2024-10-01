@@ -304,4 +304,14 @@ h6 {
   }
 }
 
+span {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+span b {
+  font-family: "DM Serif Text", serif;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */
