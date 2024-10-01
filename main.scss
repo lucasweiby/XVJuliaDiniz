@@ -16,14 +16,14 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
-
-.gifts-body {
-  align-items: start;
 
   @include mobile {
     flex-direction: column;
   }
+}
+
+.gifts-body {
+  align-items: start;
 }
 
 h1,
@@ -44,6 +44,11 @@ h6 {
   width: 30%;
   height: 100%;
 
+  @include mobile {
+    width: unset;
+    height: 35vh;
+  }
+
   &-logo {
     img {
       width: 100%;
@@ -61,6 +66,10 @@ h6 {
     list-style: none;
     flex-direction: column;
     text-transform: uppercase;
+
+    @include mobile {
+      margin-top: 16px;
+    }
 
     &-item {
       position: relative;
@@ -287,4 +296,11 @@ h6 {
 .videoBG {
   width: 70%;
   min-height: 100%;
+
+  @include mobile {
+    width: 100%;
+    height: 65vh;
+    min-height: unset;
+    object-fit: cover;
+  }
 }
