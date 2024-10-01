@@ -18,6 +18,11 @@ body {
 .gifts-body {
   align-items: start;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-body {
+    flex-direction: column;
+  }
+}
 
 h1,
 h2,
@@ -85,6 +90,12 @@ h6 {
   width: 30%;
   padding: 32px;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-left {
+    width: 100%;
+    padding: 0;
+  }
+}
 .gifts-left img {
   width: 100%;
 }
@@ -99,6 +110,11 @@ h6 {
   line-height: 2;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-left-info {
+    padding: 0 16px;
+  }
+}
 .gifts-left-info b {
   font-weight: 600;
   color: #bc1823;
@@ -112,6 +128,11 @@ h6 {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+@media only screen and (max-width: 600px) {
+  .gifts-left-pix {
+    flex-direction: column;
+  }
 }
 .gifts-left-pix b {
   font-family: "DM Serif Text", serif;
@@ -133,6 +154,14 @@ h6 {
   overflow-y: auto;
   padding: 0 32px;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-right {
+    width: 100%;
+    height: auto;
+    overflow-y: unset;
+    padding: 0;
+  }
+}
 .gifts-right-menu {
   width: 100%;
   display: flex;
@@ -145,6 +174,12 @@ h6 {
   position: sticky;
   top: 0;
   list-style: none;
+}
+@media only screen and (max-width: 600px) {
+  .gifts-right-menu {
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
 }
 .gifts-right-menu-item {
   position: relative;
@@ -175,6 +210,11 @@ h6 {
 .gifts-right-list {
   padding-bottom: 32px;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-right-list {
+    padding: 0 16px 32px;
+  }
+}
 .gifts-right-list-item:not(:first-child) {
   margin-top: 64px;
 }
@@ -186,10 +226,20 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
+@media only screen and (max-width: 600px) {
+  .gifts-right-list-item ul {
+    grid-template-columns: 1fr;
+  }
+}
 .gifts-right-list-item li img {
   width: 100%;
-  height: 350px;
+  height: 290px;
   object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .gifts-right-list-item li img {
+    height: 350px;
+  }
 }
 .gifts-right-list-item li span {
   font-family: "Outfit", sans-serif;
